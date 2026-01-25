@@ -1,0 +1,38 @@
+.layout-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    /* Width of sidebar */
+    padding: 2rem 3rem;
+    min-width: 0;
+    /* Prevent overflow issues */
+    position: relative;
+}
+
+/* Add a subtle top glow for aesthetics */
+.main-content::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 20%;
+    right: 20%;
+    height: 200px;
+    background: radial-gradient(ellipse at center, rgba(120, 80, 255, 0.15), transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+    }
+}

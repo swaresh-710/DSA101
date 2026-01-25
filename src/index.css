@@ -1,0 +1,92 @@
+:root {
+  /* Color Palette - Premium Dark Mode */
+  --hue: 250; /* Deep Purple/Blue base */
+  --bg-primary: hsl(var(--hue), 20%, 8%);
+  --bg-secondary: hsl(var(--hue), 15%, 12%);
+  --bg-tertiary: hsl(var(--hue), 15%, 16%);
+  
+  --text-primary: hsl(0, 0%, 95%);
+  --text-secondary: hsl(var(--hue), 10%, 70%);
+  --text-accent: hsl(280, 80%, 70%); /* Vivid Purple/Pink */
+  
+  --accent-primary: hsl(270, 70%, 55%);
+  --accent-secondary: hsl(190, 80%, 60%); /* Cyan/Blue for contrast */
+  
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-hightlight: rgba(255, 255, 255, 0.2);
+  
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(80, 40, 150, 0.15), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(40, 100, 150, 0.15), transparent 25%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--text-accent);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
