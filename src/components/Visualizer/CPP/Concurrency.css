@@ -1,0 +1,242 @@
+/* Concurrency.css */
+.conc-viz-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f172a;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    font-family: sans-serif;
+    min-height: 500px;
+}
+
+.conc-header {
+    background-color: #1e293b;
+    padding: 1rem;
+    border-bottom: 1px solid #334155;
+}
+
+.conc-controls {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.conc-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: filter 0.2s;
+}
+
+.conc-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.conc-btn:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.btn-unsafe {
+    background-color: #ef4444;
+}
+
+.btn-safe {
+    background-color: #10b981;
+}
+
+.btn-reset {
+    background-color: #475569;
+}
+
+/* Stage Layout */
+.conc-stage {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #0f172a;
+}
+
+/* Thread Lane */
+.thread-lane {
+    background-color: #1e293b;
+    border: 2px solid #334155;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    transition: border-color 0.3s;
+}
+
+.thread-lane.blocked {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.thread-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 1rem;
+}
+
+.thread-name {
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.thread-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.register-box {
+    background-color: #020617;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px dashed #64748b;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+}
+
+.reg-label {
+    color: #94a3b8;
+    font-size: 0.8rem;
+}
+
+.reg-val {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.action-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.action-pill {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.read {
+    background-color: #3b82f6;
+}
+
+.write {
+    background-color: #f59e0b;
+}
+
+.lock {
+    background-color: #10b981;
+}
+
+.block {
+    background-color: #ef4444;
+}
+
+/* Shared Zone */
+.shared-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-left: 1px dashed #334155;
+    border-right: 1px dashed #334155;
+    padding: 0 1rem;
+}
+
+.mutex-box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.mutex-box.free {
+    background-color: #0d9488;
+    opacity: 0.5;
+}
+
+.mutex-box.owned-t1 {
+    background-color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+.mutex-box.owned-t2 {
+    background-color: #38bdf8;
+    border: 2px solid #38bdf8;
+}
+
+/* Note: Simplified coloring for ownership - or maybe different hues */
+
+.mutex-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.mutex-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.memory-box {
+    background-color: #020617;
+    border: 2px solid #facc15;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.2);
+}
+
+.mem-label {
+    color: #facc15;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.mem-val {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Console */
+.conc-console {
+    background-color: #020617;
+    padding: 0.5rem;
+    border-top: 1px solid #334155;
+    height: 100px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+.log-line {
+    color: #4ade80;
+    margin-bottom: 2px;
+}

@@ -4,8 +4,14 @@ export const modules = [
         title: 'C++ Core Concepts',
         topics: [
             { id: 'intro', title: 'Introduction', type: 'theory' },
+            { id: 'cpp-internals', title: 'How C++ Works (Internals)', type: 'theory' },
             { id: 'memory', title: 'Memory Management', type: 'theory' },
             { id: 'pointers', title: 'Pointers & References', type: 'interactive' },
+            { id: 'cpp-smart-pointers', title: 'Smart Pointers (RAII)', type: 'interactive' },
+            { id: 'cpp-vectors', title: 'std::vector Deep Dive', type: 'interactive' },
+            { id: 'cpp-vtables', title: 'Polymorphism (V-Tables)', type: 'interactive' },
+            { id: 'cpp-move-semantics', title: 'Move Semantics', type: 'interactive' },
+            { id: 'cpp-concurrency', title: 'Multithreading & Concurrency', type: 'interactive' },
         ]
     },
     {
@@ -20,6 +26,7 @@ export const modules = [
             { id: 'heaps', title: 'Heaps & Priority Queues', type: 'interactive' },
             { id: 'tries', title: 'Tries', type: 'interactive' },
             { id: 'sets-maps', title: 'Sets & Maps', type: 'interactive' },
+            { id: 'hash-internals', title: 'Hash Table Internals', type: 'interactive' },
             { id: 'graphs', title: 'Graphs', type: 'interactive' },
             { id: 'dijkstra', title: 'Dijkstra (Shortest Path)', type: 'interactive' },
             { id: 'union-find', title: 'Union Find', type: 'interactive' },

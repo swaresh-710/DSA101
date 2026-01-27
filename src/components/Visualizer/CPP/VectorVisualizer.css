@@ -1,0 +1,237 @@
+/* VectorVisualizer.css */
+.vector-viz-container {
+    background-color: #0f172a;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    color: #e2e8f0;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    border: 1px solid #334155;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.vector-header {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metric .label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.metric .value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+.vector-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.v-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    color: white;
+}
+
+.v-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: grayscale(1);
+}
+
+.push {
+    background-color: #2563eb;
+}
+
+.push:hover:not(:disabled) {
+    background-color: #1d4ed8;
+}
+
+.pop {
+    background-color: #dc2626;
+}
+
+.pop:hover:not(:disabled) {
+    background-color: #b91c1c;
+}
+
+.clear {
+    background-color: #475569;
+}
+
+.clear:hover:not(:disabled) {
+    background-color: #334155;
+}
+
+.vector-message {
+    background-color: #020617;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    color: #4ade80;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1e293b;
+}
+
+.vector-memory-view {
+    position: relative;
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px dashed #475569;
+    margin-bottom: 2rem;
+    min-height: 15rem;
+}
+
+.memory-label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 0.7rem;
+    color: #64748b;
+    font-weight: bold;
+}
+
+.vector-block {
+    display: grid;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.vector-cell {
+    aspect-ratio: 1;
+    border-radius: 0.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.filled {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    border: 1px solid #60a5fa;
+}
+
+.empty {
+    background-color: #0f172a;
+    border: 1px dashed #475569;
+    opacity: 0.6;
+}
+
+.cell-index {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    font-size: 0.65rem;
+    opacity: 0.8;
+}
+
+.cell-value {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.cell-value-placeholder {
+    font-size: 1rem;
+    color: #475569;
+}
+
+.cell-addr {
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    font-size: 0.55rem;
+    font-family: monospace;
+    opacity: 0.7;
+}
+
+.resize-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(2px);
+}
+
+.resize-arrow {
+    font-size: 3rem;
+    color: #facc15;
+    animation: bounce 1s infinite;
+}
+
+.resize-text {
+    color: #facc15;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(10%);
+    }
+}
+
+.viz-explanation {
+    background-color: #1e1b4b;
+    border: 1px solid #4338ca;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.viz-explanation p {
+    margin-bottom: 0.5rem;
+}
+
+.viz-explanation ol {
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+    margin-bottom: 0.5rem;
+}
+
+.code-pill {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.2rem;
+    font-family: monospace;
+    color: #cbd5e1;
+}

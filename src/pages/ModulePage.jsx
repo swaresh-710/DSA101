@@ -87,7 +87,21 @@ import TrieContent from '../components/Content/Blind75/TrieContent.jsx';
 import WordSearchContent from '../components/Content/Blind75/WordSearchContent.jsx';
 import MergeKListsContent from '../components/Content/Blind75/MergeKListsContent.jsx';
 
+import HowCppWorksContent from '../components/Content/CPP/HowCppWorksContent';
+import VectorInternalsContent from '../components/Content/CPP/VectorInternalsContent';
+import SmartPointersContent from '../components/Content/CPP/SmartPointersContent';
+import VTableContent from '../components/Content/CPP/VTableContent';
+import MoveSemanticsContent from '../components/Content/CPP/MoveSemanticsContent';
+import ConcurrencyContent from '../components/Content/CPP/ConcurrencyContent';
+import HashTableContent from '../components/Content/DataStructures/HashTableContent';
+
 const topicComponents = {
+    'cpp-internals': HowCppWorksContent,
+    'cpp-vectors': VectorInternalsContent,
+    'cpp-smart-pointers': SmartPointersContent,
+    'cpp-vtables': VTableContent,
+    'cpp-move-semantics': MoveSemanticsContent,
+    'cpp-concurrency': ConcurrencyContent,
     'intro': IntroContent,
     'stl-containers': STLContainers,
     'memory': MemoryManagement,
@@ -101,6 +115,7 @@ const topicComponents = {
     'heaps': HeapsContent,
     'tries': TriesContent,
     'sets-maps': SetsMapsContent,
+    'hash-internals': HashTableContent,
     'graphs': GraphsContent,
     'recursion': RecursionContent,
     'fast-slow-pointers': FastSlowPointersContent,
