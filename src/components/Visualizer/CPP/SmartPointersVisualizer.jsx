@@ -132,7 +132,7 @@ const SmartPointersVisualizer = () => {
         <div className="sp-viz-container">
             <div className="sp-sidebar">
                 <h3 className="sp-title">Code Actions</h3>
-                <div className="sp-controls">
+                <div className="visualizer-controls">
                     <button className="sp-btn btn-scope" onClick={pushScope}>Push Scope {'{'}</button>
                     <button className="sp-btn btn-scope-pop" onClick={popScope} disabled={scopes.length === 1}>Pop Scope {'}'}</button>
                     <div className="sp-divider"></div>

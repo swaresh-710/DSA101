@@ -84,7 +84,7 @@ const VectorVisualizer = () => {
             </div>
 
             {/* Controls */}
-            <div className="vector-controls">
+            <div className="visualizer-controls">
                 <button onClick={pushBack} disabled={isResizing} className="v-btn push">
                     push_back()
                 </button>
@@ -105,7 +105,7 @@ const VectorVisualizer = () => {
             {/* Visualizer Area */}
             <div className="vector-memory-view">
                 <div className="memory-label">Heap Memory</div>
-                <div className="vector-block" style={{ gridTemplateColumns: `repeat(${vector.capacity}, 1fr)` }}>
+                <div className="vector-block" className="vector-block-responsive">
                     {/* Render actual elements */}
                     <AnimatePresence>
                         {vector.data.map((val, idx) => (

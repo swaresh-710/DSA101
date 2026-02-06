@@ -163,7 +163,7 @@ const ConcurrencyVisualizer = () => {
     return (
         <div className="conc-viz-container">
             <div className="conc-header">
-                <div className="conc-controls">
+                <div className="visualizer-controls">
                     <button className="conc-btn btn-unsafe" onClick={runRaceCondition} disabled={isRunning}>Unsafe Increment</button>
                     <button className="conc-btn btn-safe" onClick={runSafe} disabled={isRunning}>Safe (Mutex)</button>
                     <button className="conc-btn btn-reset" onClick={reset} disabled={isRunning}>Reset</button>

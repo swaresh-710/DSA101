@@ -101,7 +101,7 @@ const VTableVisualizer = () => {
     return (
         <div className="vt-viz-container">
             {/* Control Panel */}
-            <div className="vt-controls">
+            <div className="visualizer-controls">
                 <h3 className="vt-title">Runtime Simulation</h3>
                 <div className="btn-group">
                     <button className="vt-btn" onClick={() => createObject('Animal')}>new Animal()</button>

@@ -31,7 +31,7 @@ const MoveSemanticsContent = () => {
             </section>
 
             {/* Theory Breakdown */}
-            <section style={{ marginBottom: '4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            <section className="responsive-grid-2" style={{ marginBottom: "4rem" }}>
                 <div>
                     <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#f8fafc', marginBottom: '1rem' }}>
                         Value Categories

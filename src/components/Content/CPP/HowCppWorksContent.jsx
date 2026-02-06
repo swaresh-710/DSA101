@@ -76,7 +76,7 @@ const HowCppWorksContent = () => {
                     Once your program runs, the OS assigns it a chunk of memory (RAM). This memory is divided into specific segments, each with a unique purpose.
                 </p>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
+                <div className="responsive-grid-2" style={{ marginBottom: '2rem' }}>
                     <div style={{ background: '#1e1b4b', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #4338ca' }}>
                         <h4 style={{ color: '#818cf8', fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '0.5rem' }}>The Stack</h4>
                         <ul style={{ listStyleType: 'disc', paddingLeft: '1.5rem', color: '#c7d2fe', fontSize: '0.95rem', spaceY: '0.5rem' }}>

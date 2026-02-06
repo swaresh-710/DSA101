@@ -275,3 +275,8 @@
     font-weight: bold;
     font-size: 0.9rem;
 }
+@media (max-width: 768px) {
+    .sp-sidebar {
+        width: 100%;
+    }
+}

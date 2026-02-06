@@ -235,3 +235,25 @@
     font-family: monospace;
     color: #cbd5e1;
 }
+/* Mobile adjust */
+.vector-block-responsive {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.vector-cell {
+    width: 60px;
+    height: 60px;
+    /* Override aspect-ratio if needed or rely on width/height */
+}
+
+@media (max-width: 768px) {
+    .vector-header {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}

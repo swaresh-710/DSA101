@@ -223,3 +223,14 @@
     padding: 2px 4px;
     border-radius: 2px;
 }
+
+@media (max-width: 768px) {
+    .mv-main-view {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .stack-obj {
+        width: 100%;
+    }
+}

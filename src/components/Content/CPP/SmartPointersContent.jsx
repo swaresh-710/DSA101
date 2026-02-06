@@ -31,7 +31,7 @@ const SmartPointersContent = () => {
             </section>
 
             {/* Theory Breakdown */}
-            <section style={{ marginBottom: '4rem', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            <section className="responsive-grid-2" style={{ marginBottom: "4rem" }}>
                 <div style={{ background: '#1e1b4b', padding: '1.5rem', borderRadius: '0.5rem', border: '1px solid #4338ca' }}>
                     <h4 style={{ color: '#8b5cf6', fontWeight: 'bold', fontSize: '1.2rem', marginBottom: '1rem' }}>
                         std::unique_ptr

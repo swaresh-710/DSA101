@@ -82,7 +82,7 @@ const MoveSemanticsVisualizer = () => {
         <div className="mv-viz-container">
             <div className="mv-header">
                 <h3>Visualizing Ownership Transfer</h3>
-                <div className="mv-controls">
+                <div className="visualizer-controls">
                     <button className="mv-btn btn-copy" onClick={runCopy} disabled={animState !== 'idle'}>Deep Copy (const &)</button>
                     <button className="mv-btn btn-move" onClick={runMove} disabled={animState !== 'idle'}>Move (&&)</button>
                     <button className="mv-btn btn-reset" onClick={reset} disabled={animState !== 'idle'}>Reset</button>
