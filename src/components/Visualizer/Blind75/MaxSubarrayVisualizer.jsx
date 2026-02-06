@@ -84,7 +84,7 @@ const MaxSubarrayVisualizer = () => {
 
     return (
         <div style={{ padding: '1rem', color: 'white' }}>
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', alignItems: 'center' }}>
+            <div className="visualizer-controls">
                 <button
                     onClick={handleStep}
                     disabled={isFinished}

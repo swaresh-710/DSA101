@@ -26,7 +26,7 @@ public:
     return (
         <div className="interactive-content">
             <div style={{ marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                <div className="responsive-header">
                     <h2 style={{ margin: 0 }}>Longest Increasing Subsequence</h2>
                     <span style={{
                         padding: '0.25rem 0.75rem',

@@ -19,6 +19,25 @@
 .sidebar-header {
     padding: 2rem 1.5rem;
     border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-close-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-close-btn {
+        display: block;
+    }
 }
 
 .logo-text {
@@ -26,6 +45,7 @@
     font-weight: 800;
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
 }

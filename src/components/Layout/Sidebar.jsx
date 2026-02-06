@@ -3,9 +3,16 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { modules } from '../../data/modules';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
     const location = useLocation();
     const [expandedSections, setExpandedSections] = useState({});
+
+    // Close sidebar on route change (mobile)
+    useEffect(() => {
+        if (window.innerWidth <= 768 && onClose) {
+            onClose();
+        }
+    }, [location.pathname]);
 
     // Initialize state to expand the section matching the current URL or all by default?
     // Let's expand all by default for now, or just the one user is on.
@@ -40,9 +47,10 @@ const Sidebar = () => {
     };
 
     return (
-        <aside className="sidebar">
+        <aside className={`sidebar ${isOpen ? 'mobile-open' : ''}`}>
             <div className="sidebar-header">
                 <div className="logo-text">DSA Mastery</div>
+                <button className="mobile-close-btn" onClick={onClose}>&times;</button>
             </div>
 
             <nav className="sidebar-nav">

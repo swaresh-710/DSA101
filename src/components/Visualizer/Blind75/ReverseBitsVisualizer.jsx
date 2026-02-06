@@ -111,7 +111,7 @@ const ReverseBitsVisualizer = () => {
 
     return (
         <div style={{ padding: '1rem', color: 'white' }}>
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', alignItems: 'center' }}>
+            <div className="visualizer-controls">
                 <button
                     onClick={handleStepShift}
                     disabled={isFinished}
@@ -143,7 +143,7 @@ const ReverseBitsVisualizer = () => {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
                 {/* Visual Bits */}
-                <div style={{ display: 'flex', gap: '2rem' }}>
+                <div className="responsive-flex" style={{ gap: '2rem' }}>
                     <div>
                         <div style={{ marginBottom: '0.5rem', color: '#888' }}>Remaining Input (n)</div>
                         <div style={{ display: 'flex', gap: '2px' }}>

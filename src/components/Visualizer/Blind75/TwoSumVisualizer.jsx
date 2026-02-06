@@ -61,7 +61,7 @@ const TwoSumVisualizer = () => {
     return (
         <div style={{ padding: '1rem', color: 'white' }}>
             {/* Controls */}
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', alignItems: 'center' }}>
+            <div className="visualizer-controls">
                 <select
                     value={algoMode}
                     onChange={(e) => { setAlgoMode(e.target.value); reset(); }}
@@ -98,11 +98,11 @@ const TwoSumVisualizer = () => {
                 {message}
             </div>
 
-            <div style={{ display: 'flex', gap: '4rem', flexWrap: 'wrap' }}>
+            <div className="responsive-flex" style={{ gap: '4rem', alignItems: 'flex-start' }}>
                 {/* Array View */}
                 <div>
                     <h4 style={{ color: '#888', marginBottom: '1rem' }}>Array (nums)</h4>
-                    <div style={{ display: 'flex', gap: '10px' }}>
+                    <div className="responsive-flex" style={{ gap: '10px' }}>
                         {array.map((val, i) => {
                             const isCurrent = i === currentIndex;
                             const isFound = foundIndices.includes(i);
@@ -136,7 +136,7 @@ const TwoSumVisualizer = () => {
                 </div>
 
                 {/* Hash Map View */}
-                <div>
+                <div style={{ width: '100%', maxWidth: '300px' }}>
                     <h4 style={{ color: '#888', marginBottom: '1rem' }}>Hash Map (Value {'->'} Index)</h4>
                     <div style={{
                         border: '1px solid #444',

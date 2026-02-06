@@ -82,7 +82,7 @@ const MaxProductSubarrayVisualizer = () => {
 
     return (
         <div style={{ padding: '1rem', color: 'white' }}>
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', alignItems: 'center' }}>
+            <div className="visualizer-controls">
                 <button
                     onClick={handleStep}
                     disabled={isFinished}
@@ -129,7 +129,7 @@ const MaxProductSubarrayVisualizer = () => {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', gap: '2rem', marginBottom: '2rem' }}>
+            <div className="responsive-flex" style={{ gap: '2rem', marginBottom: '2rem' }}>
                 <div style={{ background: 'rgba(46, 204, 113, 0.1)', padding: '1rem', borderRadius: '8px', border: '1px solid rgba(46, 204, 113, 0.3)' }}>
                     <div style={{ color: '#888', fontSize: '0.9rem' }}>Current Max</div>
                     <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#2ecc71' }}>

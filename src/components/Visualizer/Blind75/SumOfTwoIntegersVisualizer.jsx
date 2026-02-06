@@ -88,7 +88,7 @@ const SumOfTwoIntegersVisualizer = () => {
 
     return (
         <div style={{ padding: '1rem', color: 'white' }}>
-            <div style={{ display: 'flex', gap: '1rem', marginBottom: '2rem', alignItems: 'center' }}>
+            <div className="visualizer-controls">
                 <button
                     onClick={handleStep}
                     disabled={step === 'DONE'}
@@ -143,7 +143,7 @@ const SumOfTwoIntegersVisualizer = () => {
                 {step !== 'INIT' && step !== 'DONE' && (
                     <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1rem', borderRadius: '8px' }}>
                         <div style={{ marginBottom: '10px', fontSize: '0.9rem', color: '#888' }}>Bitwise Logic</div>
-                        <div style={{ display: 'flex', gap: '2rem' }}>
+                        <div className="responsive-flex" style={{ gap: '2rem' }}>
                             <div>
                                 <div>A ^ B (Sum without carry)</div>
                                 <div style={{ fontFamily: 'monospace', fontSize: '1.2rem', color: 'var(--accent-primary)' }}>

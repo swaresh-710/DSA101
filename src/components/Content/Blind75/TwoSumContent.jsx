@@ -21,7 +21,7 @@ public:
     return (
         <div className="interactive-content">
             <div style={{ marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1rem' }}>
+                <div className="responsive-header">
                     <h2 style={{ margin: 0 }}>Two Sum</h2>
                     <span style={{
                         padding: '0.25rem 0.75rem',
@@ -62,7 +62,7 @@ public:
 
             <section style={{ marginBottom: '3rem' }}>
                 <h3>Approach & Complexity</h3>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '2rem' }}>
+                <div className="responsive-grid-2">
                     <div style={{ background: 'rgba(255,255,255,0.03)', padding: '1.5rem', borderRadius: '8px' }}>
                         <h4 style={{ color: '#FF6B6B', marginBottom: '0.5rem' }}>Brute Force</h4>
                         <p style={{ fontSize: '0.9rem', color: '#aaa', marginBottom: '0.5rem' }}>Nested Loop. Check every pair.</p>
