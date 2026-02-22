@@ -35,6 +35,24 @@ import UnionFindContent from '../components/Content/Interactive/UnionFindContent
 import MonotonicStackContent from '../components/Content/Interactive/MonotonicStackContent';
 import DijkstraContent from '../components/Content/Interactive/DijkstraContent';
 import TwoSumContent from '../components/Content/Blind75/TwoSumContent';
+import ValidParenthesesContent from '../components/Content/Blind75/ValidParenthesesContent';
+import ValidAnagramContent from '../components/Content/Blind75/ValidAnagramContent';
+import GroupAnagramsContent from '../components/Content/Blind75/GroupAnagramsContent';
+import ValidPalindromeContent from '../components/Content/Blind75/ValidPalindromeContent';
+import LongestPalindromicSubstringContent from '../components/Content/Blind75/LongestPalindromicSubstringContent';
+import PalindromicSubstringsContent from '../components/Content/Blind75/PalindromicSubstringsContent';
+import EncodeDecodeStringsContent from '../components/Content/Blind75/EncodeDecodeStringsContent';
+import ConstructBinaryTreeContent from '../components/Content/Blind75/ConstructBinaryTreeContent';
+import BinaryTreeMaxPathSumContent from '../components/Content/Blind75/BinaryTreeMaxPathSumContent';
+import KthSmallestInBstContent from '../components/Content/Blind75/KthSmallestInBstContent';
+import AddAndSearchWordContent from '../components/Content/Blind75/AddAndSearchWordContent';
+import WordSearchIIContent from '../components/Content/Blind75/WordSearchIIContent';
+import ConnectedComponentsContent from '../components/Content/Blind75/ConnectedComponentsContent';
+import AlienDictionaryContent from '../components/Content/Blind75/AlienDictionaryContent';
+import GraphValidTreeContent from '../components/Content/Blind75/GraphValidTreeContent';
+import MergeTwoSortedListsContent from '../components/Content/Blind75/MergeTwoSortedListsContent';
+import ReorderListContent from '../components/Content/Blind75/ReorderListContent';
+import RemoveNthNodeContent from '../components/Content/Blind75/RemoveNthNodeContent';
 import StockContent from '../components/Content/Blind75/StockContent';
 import ContainsDuplicateContent from '../components/Content/Blind75/ContainsDuplicateContent';
 import ProductExceptSelfContent from '../components/Content/Blind75/ProductExceptSelfContent';
@@ -136,6 +154,24 @@ const topicComponents = {
     'monotonic-stack': MonotonicStackContent,
     'dijkstra': DijkstraContent,
     'two-sum': TwoSumContent,
+    'valid-parentheses': ValidParenthesesContent,
+    'valid-anagram': ValidAnagramContent,
+    'group-anagrams': GroupAnagramsContent,
+    'valid-palindrome': ValidPalindromeContent,
+    'longest-palindromic-substring': LongestPalindromicSubstringContent,
+    'palindromic-substrings': PalindromicSubstringsContent,
+    'encode-decode-strings': EncodeDecodeStringsContent,
+    'construct-binary-tree': ConstructBinaryTreeContent,
+    'binary-tree-max-path-sum': BinaryTreeMaxPathSumContent,
+    'kth-smallest-bst': KthSmallestInBstContent,
+    'add-search-word': AddAndSearchWordContent,
+    'word-search-ii': WordSearchIIContent,
+    'connected-components': ConnectedComponentsContent,
+    'alien-dictionary': AlienDictionaryContent,
+    'graph-valid-tree': GraphValidTreeContent,
+    'merge-two-sorted-lists': MergeTwoSortedListsContent,
+    'reorder-list': ReorderListContent,
+    'remove-nth-node': RemoveNthNodeContent,
     'best-time-stock': StockContent,
     'contains-duplicate': ContainsDuplicateContent,
     'product-except-self': ProductExceptSelfContent,

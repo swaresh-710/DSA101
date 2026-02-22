@@ -44,10 +44,10 @@ const VTableContent = () => {
                             <strong>The Static Table:</strong> The compiler creates a static table (V-Table) for <em>each class</em> containing addresses of its virtual functions.
                         </li>
                         <li>
-                            <strong>Dynamic Dispatch:</strong> When you call `ptr->speak()`, the compiler runs:
+                            <strong>Dynamic Dispatch:</strong> When you call <code>{"ptr->speak()"}</code>, the compiler runs:
                             <br />
                             <code style={{ background: '#020617', padding: '0.2rem', fontFamily: 'monospace', color: '#facc15' }}>
-                                call (ptr->vptr[0])
+                                {"call (ptr->vptr[0])"}
                             </code>
                         </li>
                     </ul>

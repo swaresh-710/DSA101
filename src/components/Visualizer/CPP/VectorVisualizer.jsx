@@ -105,7 +105,7 @@ const VectorVisualizer = () => {
             {/* Visualizer Area */}
             <div className="vector-memory-view">
                 <div className="memory-label">Heap Memory</div>
-                <div className="vector-block" className="vector-block-responsive">
+                <div className="vector-block vector-block-responsive">
                     {/* Render actual elements */}
                     <AnimatePresence>
                         {vector.data.map((val, idx) => (
